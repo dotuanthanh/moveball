@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MoveBAll</title>
+</head>
+<body>
+
+<img id="myimg"   style="height: 200px ; width: 200px"  src="http://t1.gstatic.com/images?q=tbn:ANd9GcSpuHsQl24YFqmYhfj35EuqdKwaKt-hT6eqhHisx6nnsYq2EYbM5qZv5ZLpZQ6D-lxLeg-W_c-Q-j6TqSDS0hE"/>
+<br>
+<strong  style=" text-align : left  ; margin-bottom : 100px "> click button to move the ball to right </strong>
+<input type="button" onclick="move()" value="click" >
+</body>
+</html>
+<script>
+  let img
+  function init() {
+     img = document.getElementById('myimg')
+      img.style.position = 'relative'
+    img.style.left='0px'
+  }
+  window.onload=init()
+  function move(){
+
+      img.style.left= parseInt(img.style.left) +10+ 'px';
+  }
+</script>
+
